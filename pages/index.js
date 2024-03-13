@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <div className="bg-white">
       <div className="bg-[url('/backimg.jpeg')] bg-cover object-cover w-full h-screen bg-center flex flex-col items-center justify-between">
-        <div className="flex w-full px-5 py-[50px] flex-row items-center justify-between bg-gray-300">
+        <div className="flex w-full px-5 py-[10px] flex-row items-center justify-between bg-gray-300">
           <div className="flex flex-row items-center gap-5">
-            <Image src={"/xxa.jpg"} width={100} height={100} />
+            <Image src={"/xxa.jpg"} width={70} height={70} />
             <p className="text-black text-bold text-[20px]">
               Эрүүл мэндийн <br />
               хичээлийн бие даалт
@@ -50,7 +50,7 @@ export default function Home() {
       </div>
       <div className="w-full h-screen bg-gradient-to-r from-gray-300 to-black flex items-center justify-center">
         <div className="w-[90%] py-[50px] rounded-[23px]  flex flex-row">
-          <div className="w-[30%] h-[100%] bg-[url('/us.webp')] bg-cover rounded-l-[23px]"></div>
+          <div className="w-[30%]  bg-[url('/us.webp')] bg-cover rounded-l-[23px]"></div>
           <div className="w-[70%] h-[100%] p-[30px] flex flex-col  gap-[20px] py-[80px] bg-gradient-to-r from-[#5e5e5e] to-gray-300  rounded-r-[22px]">
             <p className="text-[35px]  leading-8  text-white font-serif pb-[20px]">Бэлгийн хариу үйлдлийн үе шат ба илрэх шинж тэмдэг</p>
             <p className="text-white  text-[20px]  leading-8">
@@ -107,9 +107,9 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="w-full py-[50px] h-screen  flex  flex-col  ">
+      <div className="w-full py-[50px] px-[100px]   flex  flex-col  ">
         <div className="w-[100%] h-[100%] flex flex-row">
-          <div className="w-[50%] h-[100%]   bg-[url('/lolzurag1.png')]  bg-center bg-cover"></div>
+          <div className="w-[40%]  object-contain bg-[url('/lolzurag1.png')]  bg-center bg-cover"></div>
           <div className="w-[70%] h-[100%]  flex  justify-center ">
             <p className="text-[22px] pl-[50px]">
               Бэлгийн хариу үйлдлийн үе шатны дараалал болон үргэлжлэх хугацаа хүн тус бүрт харилцан адилгүй байна. Бэлгийн хариу үйлдлийн үе шат нь
@@ -120,14 +120,14 @@ export default function Home() {
           </div>
         </div>
         <div className="w-[100%] h-[100%] flex items-center justify-center flex-row gap-5 pr-[50px]">
-          <div className="w-[50%] h-[50%] ">
+          <div className="w-[40%] h-[50%] ">
             <p className="text-[22px]">
               Эрэгтэй, эмэгтэй хүний бэлгийн хариу үйлдлийн давтамж хэрхэн ялгаатай болохыг 1 ба 2 дугаар зурагт харуулсан. Тус зургаас үзвэл Эмэгтэй
               хүн нэг удаагийн бэлгийн хавьтлын үед хэд хэдэн удаа дур ханах болмжтой . Харин эрэгтэй хүний хувьд нэг удаагийн бэлгийн хавьтлын үед
               дахин дур ханахын тулд түр амсхийх хугацаа хэрэгтэй .
             </p>
           </div>
-          <div className="w-[50%] h-[100%]  bg-[url('/lolzurag2.png')]  bg-center bg-cover"></div>
+          <div className="w-[40%]  h-[350px] object-contain bg-[url('/lolzurag2.png')]  bg-center bg-cover"></div>
         </div>
       </div>
       <div className="w-full py-[100px] flex justify-center">
