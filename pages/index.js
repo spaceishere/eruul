@@ -1,118 +1,174 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
+import Link from "next/link";
+import { BsGenderFemale } from "react-icons/bs";
+import { BsGenderMale } from "react-icons/bs";
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="bg-white">
+      <div className="bg-[url('/backimg.jpeg')] bg-cover w-full h-screen bg-center flex flex-col items-center justify-between">
+        <div className="flex w-full p-5 flex-row items-center justify-between bg-gray-300">
+          <div className="flex flex-row items-center gap-5">
+            <Image src={"/xxa.jpg"} width={100} height={100} />
+            <p className="text-black text-bold text-[20px]">
+              Эрүүл мэндийн <br />
+              хичээлийн бие даалт
+            </p>
+          </div>
+          <div className="py-[20px] px-[20px] rounded-[8px] bg-slate-500 text-white hover:bg-slate-400 hover:text-blue-800">
+            <Link href="/exercise"> Дасгал ажил</Link>
+          </div>
+        </div>
+        <p className="text-white text-[60px] pb-[90px] text-bold">Бэлгийн хариу үйлдэл</p>
+        <p></p>
+      </div>
+      <div className="w-full h-screen flex  flex-col justify-center items-center gap-[50px] bg-gradient-to-r from-pink-300 to-blue-300">
+        <div>
+          <p className="text-[50px] text-white font-serif">Бэлгийн хариу үйлдлийн тухай ойлголт</p>
+        </div>
+        <div className="flex flex-row">
+          <div className="w-[20%] flex justify-center items-center">
+            <BsGenderMale className="text-[200px] text-blue-400 " />
+          </div>
+          <div className="w-[60%] text-[20px] text-black ">
+            <p>
+              Хүн үр удмаа үлдээхийн тулд төдийгүй дур таашаал авахын тулд бэлгийн харилцаанд ордог. Бэлгийн сэдээлтийн үед хүний бие махбод ямар
+              хариу үйлдэл үзүүлдэг болохыг эрдэмтэд судлан хэд хэдэн загвар боловсруулсан байдаг. Америкийн судлаач Мастерс, Жонсон нар сэдээлтийг юу
+              ч үүсгэсэн хүний бие махбодын хариу урвалын мөчлөг нь дараах дөрвөн үе шатаар явагддаг болохыг тодорхойлсон. Үүнд: сэрэл хөдлөх, суурь
+              үе, дур ханах, бие тавирах. Бэлгийн сэдээлтийн үе дех хариу уйлдэл нь бие махбодын төдийгүй сэтгэл хөдлөлд гарах өөрчлөлтөөр илэрнэ.
+              Бэлгийн дур хүслийг төрүүлж буй бүхий л зүйл нь бэлгийн сэдээлт юм. Ямар наг хэлбэрээр сэдээгдсэн ч бэлгийн мөрөөдөл, гар хангалга болон
+              бусад бэлгийн хавьтлын ямар ч хэлбэрийн үед бэлгийн хариу үйлдэл дээрх үе шатаар явагдана. Бэлгийн хариу үйлдпийн үед илэрдэг
+              физиологийн өөрчлөлтийн талаар мэдсэнээр өөрийгөө таньж мэдэхийн зэрэгцээ хосууд харилцан бие биеэ ойлгох, бэлгийн харилцаатай холбоотой
+              ямар нэгэн асуудал бэрхшээл тулгарвал түүнийг хэрхэн даван туулах ойлголт нэмэгданэ. Бэлгийн хариу үйлдэл илрэх үе шат нь ерөнхий зүйл
+              бөгөөд эдгээр үе шатны үргэлжлэх хугацаа болон илэрч буй байдал хүн бүрийн хувьд харилцан адилгүй байж болно. Эрэгтэй эмэгтэй хүний
+              бэлгийн хариу үйлдэл эдгээр үе шатаар илрэх боловч онцлог ялгаатай.
+            </p>
+          </div>
+          <div className="w-[20%] flex justify-center items-center ">
+            <BsGenderFemale className="text-[200px] text-pink-400 " />
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="w-full h-screen bg-gradient-to-r from-gray-300 to-black flex items-center justify-center">
+        <div className="w-[90%] h-[60%] rounded-[23px]  flex flex-row">
+          <div className="w-[30%] h-[100%] bg-[url('/us.webp')] bg-cover rounded-l-[23px]"></div>
+          <div className="w-[70%] h-[100%] p-[30px] flex flex-col  gap-[20px] py-[80px] bg-gradient-to-r from-[#5e5e5e] to-gray-300  rounded-r-[22px]">
+            <p className="text-[35px]  leading-8  text-white font-serif pb-[20px]">Бэлгийн хариу үйлдлийн үе шат ба илрэх шинж тэмдэг</p>
+            <p className="text-white  text-[20px]  leading-8">
+              Бэлгийн хариу үйлдлийн үе шат бүрт эрэгтэй, эмэгтэй хунд дараах шинж тэмдгүүд илэрнэ.
+            </p>
+            <div>
+              <p className="text-white text-[20px] ml-[40px] ">1.Сэрэл хөдлөх</p>
+              <p className="text-white text-[20px] ml-[40px] ">2.Суурь үе</p>
+              <p className="text-white text-[20px] ml-[40px] ">3.Дур ханах</p>
+              <p className="text-white text-[20px] ml-[40px] ">4.Бие тавирах</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      <div className="w-full  flex flex-col items-center gap-[50px]  pb-[100px] pt-[100px]">
+        <div className="w-[70%] h-[350px] flex-col items-center  py-[30px] px-[30px] rounded-[20px] ml-[-300px]  border-[#ffac00] border-[2px] flex justidy-center">
+          <p className="text-[#ffac00] text-[30px] font-serif pb-[20px]">Сэрэл хөдлөх</p>
+          <p className="text-[20px]">
+            Бэлгийн дур хүсэл төрнө. Бэлэг эрхтэн цусаар дүүрч, шодой, хэлүү томордог. Сэрэл хөдлөх үе нь эрэгтэйд эмэгтэй хүнээс илүү хурдан
+            явагддаг. Шодой хөвчрөхийн зэрэгцээ хуухнагийн арьс агшиж, хуухнаг дээш бие рүүгээ ойртон татагдана. Үрийн суваг ч агшиж төмсөг бие мөн
+            бие рүү татагдана. Эмэгтэйчүүдэд үтрээ чийглэгдэнэ. Үтрээний шүүрэл ялгарна Хэлүү цусаар дүүрснээс хатуурч, хөвчирнө. Хөхний толгой болон
+            нөсөөт хэсэг хатуурч томорно.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+        </div>
+        <div className="w-[70%] h-[450px] flex-col items-center  py-[30px] px-[30px] rounded-[20px] ml-[300px] border-[#ffac00] border-[2px] flex justidy-center">
+          <p className="text-[#ffac00] text-[30px] font-serif pb-[20px]">Суурь үе</p>
+          <p className="text-[20px]">
+            Энэ үед судас тэлэлт болон сэрэл хөдлөх үед илэрсэн өөрчлөлтүүд дээд хэмжээндээ хүрнэ. Шодой бүрэн хөвчирч, (шодой хатуурах, хөвчрөх нь
+            хүн бурт харилцан адилгүй байж болно), хуухнаг бүрэн агшиж, төмсөг дээш татагддаг. Шээсний сүвээс бага зэрэг тунгалаг салсархаг шингэн
+            ялгардаг нь куперийн булчирхайн шүүрэл юм. Энэ шүүрэл нь үрийн шингэн биш ч ганц нагон эр бэлгийн эс, ХДХВ агуулагдаж байх магадлалтай
+            байдаг. Эмэгтэйчүүдэд "дур ханах суурь" үүснэ. Үтрээний үүдэвч талын хэсэг агшиж, салст нь хөөж хөвсийхийг "дур ханах суурь" гэж нэрлэдэг.
+            Хэлүү агших, бэлгийн бага уруулын өнгө улам бараан болох шинж илэрнэ. Зурхний цохилт, цусны даралт нэмэгдэхийн зэрэгцээ амьсгалын тоо ч
+            мэдэгдэхүйц олшрох нь эрэгтэй, эмэгтэй хүний аль алинд нь илэрнэ. Суурь үе нь сэрэл хөдлөх үеийн үргэлжлэл болж, дараагийн дур ханах үеийн
+            бэлтгэл болох юм. Энэ үед судас тэлэх, булчин агших ээрэг нэмэгдсээр дур ханах физиологийн үндэс бүрдтэл үргэлжилдэг.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
+        </div>
+        <div className="w-[70%] h-[350px] flex-col items-center  py-[30px] px-[30px] rounded-[20px] ml-[-300px] border-[#ffac00] border-[2px] flex justidy-center">
+          <p className="text-[#ffac00] text-[30px] font-serif pb-[20px]">Дур ханах</p>
+          <p className="text-[20px]">
+            Дур таашаалын оргил үе. Эрэгтэй, эмэгтэй хүмүүсийн аль алинд судасны цохилт, даралт болон амьсгалын тоо огцом олширдог. Бүх биеийн булчин
+            огцом агшина, гар хөлийн булчингууд мөн агшина. Эрэгтэйчүүдэд дур тавих болон үрийн шингэн ялгаруулах нь зэрэг явагдана. Эмэгтэйчүүдэд дур
+            ханах үе нь эрэгтэйчүүдээс илүү удаан байдаг. Эмэгтэйчүүд богино хугацаанд, дахин дахин дур ханах боломжтой. Зарим эмэгтэйчүүд дур
+            ханалтын үед шингэн ялгаруулдаг. Эмэгтэйчуудийн ялгаруулсан шингэн нь шээсний сүвээр гардаг боловч энэ нь шээс биш.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+        </div>
+        <div className="w-[70%] h-[400px] flex-col items-center  py-[30px] px-[30px] rounded-[20px] ml-[300px] border-[#ffac00] border-[2px] flex justidy-center">
+          <p className="text-[#ffac00] text-[30px] font-serif pb-[20px]">Бие тавирах</p>
+          <p className="text-[20px]">
+            Дур ханасны дараа биеийн булчин суларч тавирдаг. Мөн цусаар дүүрсэн судасны цусан хангамж багассаар хэвийн байдалд ордог. Бие тавирах үe
+            15-30 минут ургэлжилдэг. Гэхдээ дур ханалт явагдаагуй тохиолдолд илуу удаан үргэлжлэх боломжтой. Дийлэнх эрэгтэйчүүдэд бие тавирсны дараа
+            амрах хэсэг хугацаа хэрэгтэй байдаг, үүнийг рефрактор үе гэж нэрлэдэг. Эна хугацааны дараа эрэгтэйчүүд дахин шодой хөвчирч дур тавих
+            боломжтой болдог. Рефрактор үеийн үргэлжлах хугацаа эрэгтэйчуудийн хувьд харилцан адилгүй, зарим хунд хэдэн минут үргэлжилдэг бол зарим
+            хүнд 24 цаг хуртал үргэлжилдэг. Залуу эрэгтэйд рефрактор үе бага байдаг бөгөөд шодой маш хурдан хөвчрөх боломжтой.
           </p>
-        </a>
+        </div>
       </div>
-    </main>
+      <div className="w-full py-[50px] h-screen  flex  flex-col  px-[200px]">
+        <div className="w-[100%] h-[100%] flex flex-row">
+          <div className="w-[50%] h-[100%]   bg-[url('/lolzurag1.png')]  bg-center bg-cover"></div>
+          <div className="w-[70%] h-[100%]  flex  justify-center ">
+            <p className="text-[22px] pl-[50px]">
+              Бэлгийн хариу үйлдлийн үе шатны дараалал болон үргэлжлэх хугацаа хүн тус бүрт харилцан адилгүй байна. Бэлгийн хариу үйлдлийн үе шат нь
+              заавал тогтсон дарааллын дагуу байх албагүй. Тухайлбал, хүн бүр заавал дур ханах ёстой гэсэн үг биш. Түүнчлэн зөвхөн дур тавьсан
+              тохиолдолд л бэлгийн таашаал авч, сэтгал ханамжтай байна гэсэн үг биш. Өөрөөр хэлбэл, дур ханаагүй байсан ч таашаал авч, сэтгэл
+              ханамжтай байж болно.
+            </p>
+          </div>
+        </div>
+        <div className="w-[100%] h-[100%] flex items-center justify-center flex-row gap-5 pr-[50px]">
+          <div className="w-[50%] h-[50%] ">
+            <p className="text-[22px]">
+              Эрэгтэй, эмэгтэй хүний бэлгийн хариу үйлдлийн давтамж хэрхэн ялгаатай болохыг 1 ба 2 дугаар зурагт харуулсан. Тус зургаас үзвэл Эмэгтэй
+              хүн нэг удаагийн бэлгийн хавьтлын үед хэд хэдэн удаа дур ханах болмжтой . Харин эрэгтэй хүний хувьд нэг удаагийн бэлгийн хавьтлын үед
+              дахин дур ханахын тулд түр амсхийх хугацаа хэрэгтэй .
+            </p>
+          </div>
+          <div className="w-[50%] h-[100%]  bg-[url('/lolzurag2.png')]  bg-center bg-cover"></div>
+        </div>
+      </div>
+      <div className="w-full py-[100px] flex justify-center">
+        <div className="w-[70%] h-[400px] flex-col items-center  py-[30px] px-[30px] rounded-[20px] border-red-600 border-[2px] flex justidy-center">
+          <p className="text-red-600 text-[30px] font-serif pb-[20px]">Бэлгийн хариу үйлдэлд нөлөөлөх хүчин зүйлс ба дагавар</p>
+          <p className="text-[20px]">
+            Бэлгийн хариу үйлдэлд эерэг болон сөргөөр нөлөөлдөг хүчин зүйл байдаг. Тухайлбал, хосуудын харилцаа, дотносол, сэтгэл санааны байдал, хорт
+            зуршил, стресс, өвчин эмгэг, осол гэмтэл, хэрэглэж буй эм бэлдмэл гэх зэрэг олон зүйлс нөлөөлнө. Эдгээр хүчин зуйлсийн нөлөөгөөр бэлгийн
+            дур хүсал төрөхгуй байх, сэрэл хөдлөхгүй байх, шодой хөвчрөхгүй байх, хэт хурдан дур ханах, эсвэл огт дур ханахгуй байх гэх зэрэг сөрөг үр
+            дагавар гарна. Тиймээс дээрх сөргөөр нөлөөлөх хүчин зүйлсээс сэргийлэх нь чухал. Шаардлагатай тохиолдолд мэргеэлийн эмч, сэтгэл зүйчид
+            хандаж, эмчилгээ хийлгэж зөвлөгөө авах хэрэгтэй.
+          </p>
+        </div>
+      </div>
+      <div className="w-full py-[100px] flex justify-center">
+        <div className="w-[70%] h-auto  flex-col items-center  py-[30px] px-[30px] rounded-[20px] border-red-600 border-[2px] flex justidy-center">
+          <p className="text-red-600 text-[30px] font-serif pb-[20px]">Дасгал ажил</p>
+          <div className="text-[20px]">
+            <p>
+              1.Америкийн судлаач Мастерс, Жонсон нар сэдээлтийн юуч үүсгэсэн хүний биеийн хариу урвалын мөчлөгийг ...... , ....... , ....... ,
+              ........ гэж хуваасан
+            </p>
+            <p>2.Бэлгийн дур хүслийг түрүүлж буй бүхийл зүйл нь юу вэ ?</p>
+            <p>3. Бие тавирах үе нь хэдий хугацаанд үргэлжилдэг вэ ?</p>
+            <p>4. Дийлэнх эрэгтэйчүүд бие тавирсны дараа амрах хэсэг хугацаа хэрэгтэй байдаг . үүнийг ........ үe гэдэг.</p>
+            <p>5. Бэлгийн хариу үйлдэлд эерэг болон сөргөөр нөлөөлдөг хүчин зүйлс нэрлээрэй.</p>
+            <p>6. Бэлгийн хариу үйлдпийн сэрэл хөдлөх үе шатад эрэгтэй эмэгтэй 2 хүний альнд нь илүү хурдан явагддаг вэ ?</p>
+            <p>7. Шээсний сүвээс бага зэрэг тунгалаг салсархаг шингэн ялгардаг нь .... шүүрэл юм.</p>
+            <p>8. Бэлгийн хариу үйлдлийн дур ханах үе шатад эмэгтэйчүүд эрэгтэйчүүдийн аль нь илүү удаан явагддаг вэ ?</p>
+            <p>9. Хүмүүс хоорондоо ямар ямар шалтгааны улмаас бэлгийн харилцаанд ордог вэ ?</p>
+            <p>10. ....... нь сэрэл хөдлөх үеийн үргэлжлэл болж , дараагийн дур ханах үеийн бэлтгэл болдог.</p>
+          </div>
+        </div>
+      </div>
+      <div className="w-full h-[150px] bg-gray-300 flex items-center justify-center gap-[150px]">
+        <div className="text-black">Өнөр цогцолбор сургууль 12е анги </div>
+        <div className="text-black">
+          © 2024 12е. <br /> All rights reserved. <br />
+          Сурагч Д.Бат-Очир
+        </div>
+      </div>
+    </div>
   );
 }
