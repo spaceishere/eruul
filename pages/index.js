@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-screen bg-gradient-to-r from-gray-300 to-black flex items-center justify-center">
-        <div className="w-[90%] h-[60%] rounded-[23px]  flex flex-row">
+        <div className="w-[90%] py-[50px] rounded-[23px]  flex flex-row">
           <div className="w-[30%] h-[100%] bg-[url('/us.webp')] bg-cover rounded-l-[23px]"></div>
           <div className="w-[70%] h-[100%] p-[30px] flex flex-col  gap-[20px] py-[80px] bg-gradient-to-r from-[#5e5e5e] to-gray-300  rounded-r-[22px]">
             <p className="text-[35px]  leading-8  text-white font-serif pb-[20px]">Бэлгийн хариу үйлдлийн үе шат ба илрэх шинж тэмдэг</p>
