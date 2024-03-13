@@ -5,8 +5,8 @@ import { BsGenderMale } from "react-icons/bs";
 export default function Home() {
   return (
     <div className="bg-white">
-      <div className="bg-[url('/backimg.jpeg')] bg-cover w-full h-screen bg-center flex flex-col items-center justify-between">
-        <div className="flex w-full p-5 flex-row items-center justify-between bg-gray-300">
+      <div className="bg-[url('/backimg.jpeg')] bg-cover object-cover w-full h-screen bg-center flex flex-col items-center justify-between">
+        <div className="flex w-full px-5 py-[50px] flex-row items-center justify-between bg-gray-300">
           <div className="flex flex-row items-center gap-5">
             <Image src={"/xxa.jpg"} width={100} height={100} />
             <p className="text-black text-bold text-[20px]">
@@ -21,15 +21,15 @@ export default function Home() {
         <p className="text-white text-[60px] pb-[90px] text-bold">Бэлгийн хариу үйлдэл</p>
         <p></p>
       </div>
-      <div className="w-full h-screen flex  flex-col justify-center items-center gap-[50px] bg-gradient-to-r from-pink-300 to-blue-300">
+      <div className="w-full py-[150px] flex  flex-col justify-center items-center gap-[50px] bg-gradient-to-r from-pink-300 to-blue-300">
         <div>
-          <p className="text-[50px] text-white font-serif">Бэлгийн хариу үйлдлийн тухай ойлголт</p>
+          <p className="text-[50px] text-white font-serif text-center ">Бэлгийн хариу үйлдлийн тухай ойлголт</p>
         </div>
         <div className="flex flex-row">
           <div className="w-[20%] flex justify-center items-center">
             <BsGenderMale className="text-[200px] text-blue-400 " />
           </div>
-          <div className="w-[60%] text-[20px] text-black ">
+          <div className="w-[60%] text-[20px] text-black  text-center">
             <p>
               Хүн үр удмаа үлдээхийн тулд төдийгүй дур таашаал авахын тулд бэлгийн харилцаанд ордог. Бэлгийн сэдээлтийн үед хүний бие махбод ямар
               хариу үйлдэл үзүүлдэг болохыг эрдэмтэд судлан хэд хэдэн загвар боловсруулсан байдаг. Америкийн судлаач Мастерс, Жонсон нар сэдээлтийг юу
@@ -66,18 +66,18 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full  flex flex-col items-center gap-[50px]  pb-[100px] pt-[100px]">
-        <div className="w-[70%] h-[350px] flex-col items-center  py-[30px] px-[30px] rounded-[20px] ml-[-300px]  border-[#ffac00] border-[2px] flex justidy-center">
+        <div className="w-[70%]  flex-col items-center  py-[30px] px-[30px] rounded-[20px] ml-[-300px]  border-[#ffac00] border-[2px] flex justidy-center">
           <p className="text-[#ffac00] text-[30px] font-serif pb-[20px]">Сэрэл хөдлөх</p>
-          <p className="text-[20px]">
+          <p className="text-[20px] text-center">
             Бэлгийн дур хүсэл төрнө. Бэлэг эрхтэн цусаар дүүрч, шодой, хэлүү томордог. Сэрэл хөдлөх үе нь эрэгтэйд эмэгтэй хүнээс илүү хурдан
             явагддаг. Шодой хөвчрөхийн зэрэгцээ хуухнагийн арьс агшиж, хуухнаг дээш бие рүүгээ ойртон татагдана. Үрийн суваг ч агшиж төмсөг бие мөн
             бие рүү татагдана. Эмэгтэйчүүдэд үтрээ чийглэгдэнэ. Үтрээний шүүрэл ялгарна Хэлүү цусаар дүүрснээс хатуурч, хөвчирнө. Хөхний толгой болон
             нөсөөт хэсэг хатуурч томорно.
           </p>
         </div>
-        <div className="w-[70%] h-[450px] flex-col items-center  py-[30px] px-[30px] rounded-[20px] ml-[300px] border-[#ffac00] border-[2px] flex justidy-center">
+        <div className="w-[70%]  flex-col items-center  py-[30px] px-[30px] rounded-[20px] ml-[300px] border-[#ffac00] border-[2px] flex justidy-center">
           <p className="text-[#ffac00] text-[30px] font-serif pb-[20px]">Суурь үе</p>
-          <p className="text-[20px]">
+          <p className="text-[20px] text-center">
             Энэ үед судас тэлэлт болон сэрэл хөдлөх үед илэрсэн өөрчлөлтүүд дээд хэмжээндээ хүрнэ. Шодой бүрэн хөвчирч, (шодой хатуурах, хөвчрөх нь
             хүн бурт харилцан адилгүй байж болно), хуухнаг бүрэн агшиж, төмсөг дээш татагддаг. Шээсний сүвээс бага зэрэг тунгалаг салсархаг шингэн
             ялгардаг нь куперийн булчирхайн шүүрэл юм. Энэ шүүрэл нь үрийн шингэн биш ч ганц нагон эр бэлгийн эс, ХДХВ агуулагдаж байх магадлалтай
@@ -87,18 +87,18 @@ export default function Home() {
             бэлтгэл болох юм. Энэ үед судас тэлэх, булчин агших ээрэг нэмэгдсээр дур ханах физиологийн үндэс бүрдтэл үргэлжилдэг.
           </p>
         </div>
-        <div className="w-[70%] h-[350px] flex-col items-center  py-[30px] px-[30px] rounded-[20px] ml-[-300px] border-[#ffac00] border-[2px] flex justidy-center">
+        <div className="w-[70%]  flex-col items-center  py-[30px] px-[30px] rounded-[20px] ml-[-300px] border-[#ffac00] border-[2px] flex justidy-center">
           <p className="text-[#ffac00] text-[30px] font-serif pb-[20px]">Дур ханах</p>
-          <p className="text-[20px]">
+          <p className="text-[20px] text-center">
             Дур таашаалын оргил үе. Эрэгтэй, эмэгтэй хүмүүсийн аль алинд судасны цохилт, даралт болон амьсгалын тоо огцом олширдог. Бүх биеийн булчин
             огцом агшина, гар хөлийн булчингууд мөн агшина. Эрэгтэйчүүдэд дур тавих болон үрийн шингэн ялгаруулах нь зэрэг явагдана. Эмэгтэйчүүдэд дур
             ханах үе нь эрэгтэйчүүдээс илүү удаан байдаг. Эмэгтэйчүүд богино хугацаанд, дахин дахин дур ханах боломжтой. Зарим эмэгтэйчүүд дур
             ханалтын үед шингэн ялгаруулдаг. Эмэгтэйчуудийн ялгаруулсан шингэн нь шээсний сүвээр гардаг боловч энэ нь шээс биш.
           </p>
         </div>
-        <div className="w-[70%] h-[400px] flex-col items-center  py-[30px] px-[30px] rounded-[20px] ml-[300px] border-[#ffac00] border-[2px] flex justidy-center">
+        <div className="w-[70%]  flex-col items-center  py-[30px] px-[30px] rounded-[20px] ml-[300px] border-[#ffac00] border-[2px] flex justidy-center">
           <p className="text-[#ffac00] text-[30px] font-serif pb-[20px]">Бие тавирах</p>
-          <p className="text-[20px]">
+          <p className="text-[20px] text-center">
             Дур ханасны дараа биеийн булчин суларч тавирдаг. Мөн цусаар дүүрсэн судасны цусан хангамж багассаар хэвийн байдалд ордог. Бие тавирах үe
             15-30 минут ургэлжилдэг. Гэхдээ дур ханалт явагдаагуй тохиолдолд илуу удаан үргэлжлэх боломжтой. Дийлэнх эрэгтэйчүүдэд бие тавирсны дараа
             амрах хэсэг хугацаа хэрэгтэй байдаг, үүнийг рефрактор үе гэж нэрлэдэг. Эна хугацааны дараа эрэгтэйчүүд дахин шодой хөвчирч дур тавих
@@ -107,7 +107,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="w-full py-[50px] h-screen  flex  flex-col  px-[200px]">
+      <div className="w-full py-[50px] h-screen  flex  flex-col  ">
         <div className="w-[100%] h-[100%] flex flex-row">
           <div className="w-[50%] h-[100%]   bg-[url('/lolzurag1.png')]  bg-center bg-cover"></div>
           <div className="w-[70%] h-[100%]  flex  justify-center ">
@@ -131,9 +131,9 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full py-[100px] flex justify-center">
-        <div className="w-[70%] h-[400px] flex-col items-center  py-[30px] px-[30px] rounded-[20px] border-red-600 border-[2px] flex justidy-center">
-          <p className="text-red-600 text-[30px] font-serif pb-[20px]">Бэлгийн хариу үйлдэлд нөлөөлөх хүчин зүйлс ба дагавар</p>
-          <p className="text-[20px]">
+        <div className="w-[70%] py-[50px] flex-col items-center   px-[30px] rounded-[20px] border-red-600 border-[2px] flex justidy-center">
+          <p className="text-red-600 text-[30px] font-serif pb-[20px] text-center">Бэлгийн хариу үйлдэлд нөлөөлөх хүчин зүйлс ба дагавар</p>
+          <p className="text-[20px] text-center">
             Бэлгийн хариу үйлдэлд эерэг болон сөргөөр нөлөөлдөг хүчин зүйл байдаг. Тухайлбал, хосуудын харилцаа, дотносол, сэтгэл санааны байдал, хорт
             зуршил, стресс, өвчин эмгэг, осол гэмтэл, хэрэглэж буй эм бэлдмэл гэх зэрэг олон зүйлс нөлөөлнө. Эдгээр хүчин зуйлсийн нөлөөгөөр бэлгийн
             дур хүсал төрөхгуй байх, сэрэл хөдлөхгүй байх, шодой хөвчрөхгүй байх, хэт хурдан дур ханах, эсвэл огт дур ханахгуй байх гэх зэрэг сөрөг үр
@@ -145,7 +145,7 @@ export default function Home() {
       <div className="w-full py-[100px] flex justify-center">
         <div className="w-[70%] h-auto  flex-col items-center  py-[30px] px-[30px] rounded-[20px] border-red-600 border-[2px] flex justidy-center">
           <p className="text-red-600 text-[30px] font-serif pb-[20px]">Дасгал ажил</p>
-          <div className="text-[20px]">
+          <div className="text-[20px] ">
             <p>
               1.Америкийн судлаач Мастерс, Жонсон нар сэдээлтийн юуч үүсгэсэн хүний биеийн хариу урвалын мөчлөгийг ...... , ....... , ....... ,
               ........ гэж хуваасан
